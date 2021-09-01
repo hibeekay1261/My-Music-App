@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player App</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-app">
+        <div class="music-content">
+          <div class="music-album">
+            <img class="album-cover-image" src="" />
+            <p class="song-title"></p>
+            <p class="artist"></p>
+          </div>
+          <div class="music-controls">
+            <div id="pre_event"><i class="fas fa-step-backward"></i></div>
+            <div id="play_event">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div id="next_event"><i class="fas fa-step-forward"></i></div>
+          </div>
+        </div>
+        <audio controls id="audio" class="hidden">
+          <source src="" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
